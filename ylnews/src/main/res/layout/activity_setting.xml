@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+    <lchj.ylnews.mvp.ui.widget.HeaderBar
+        android:id="@+id/mHeaderBar"
+        style="@style/MatchWrap"
+        app:titleText="设置"
+        app:isShowBack="true"
+        />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="@dimen/common_margin"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/mCleanAllCache"
+            android:background="@drawable/border_all"
+            android:text="清除缓存"
+            android:drawableLeft="@drawable/icon_address"
+            style="@style/MeItemStyle"/>
+        <TextView
+            android:id="@+id/mCleanCacheSize"
+            android:text="0B"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="40dp"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/mShareTv"
+        android:text="分享"
+        android:drawableLeft="@drawable/icon_share"
+        style="@style/MeItemStyle"/>
+    <TextView
+        android:id="@+id/mSettingTv"
+        android:text="设置"
+        android:drawableLeft="@drawable/icon_setting"
+        style="@style/MeItemStyle"/>
+</LinearLayout>
